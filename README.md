@@ -9,7 +9,7 @@ Exercise 1
 
 All of design considerations are taking in account time limit as a primary project constraint.
 Web app is written in Flask, containerized and pushed to GCR.
-App runs on GKE and is exposed to internet via external load balancer with static ip on port 80.
+App runs on GKE and is exposed to internet via external load balancer with static ip with port-forwarding on port 80.
 Application provides metrics for prometheus via prometheus-client library.
 
 
