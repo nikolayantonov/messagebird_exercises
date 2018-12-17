@@ -16,10 +16,11 @@ Application provides metrics for prometheus via prometheus-client library.
 
 Exercise 2
 
-For the second assignment I've deployed a VM on GCE via terraform,
-but had not time left to automate prometheus deployment.
+For the second assignment I've deployed a VM on GCE via terraform.
 
-I've removed Google Cloud json key which was used by terraform to
-establish identity via Google Cloud.
+Prometheus server is deployed as a docker container on a VM https://hub.docker.com/r/prom/prometheus/
 
-Overall, I've exceeded allocated 2 hours.
+Prometheus metrics scraping was first tested locally, then prometheus configuration is passed as
+prometheus.yml to prometheus container.
+
+Google cloud json and ssh key used by terraform are scraped from the project.
