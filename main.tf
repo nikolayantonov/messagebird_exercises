@@ -43,7 +43,9 @@ resource "google_compute_instance" "default" {
 
   provisioner "remote-exec" {
     inline = [
-      "sudo apt-get -y install docker; sudo docker pull prom/prometheus",
+      "sudo apt-get -y update",
+      "sudo apt-get -y install docker",
+      "sudo docker pull prom/prometheus",
       "docker run -p 9090:9090 -v /home/niko/prometheus.yml:/etc/prometheus.prometheus.yml prom/prometheus",
     ]
 
