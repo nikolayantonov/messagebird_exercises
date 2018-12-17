@@ -23,6 +23,6 @@ Prometheus server is deployed as a docker container on a VM https://hub.docker.c
 Prometheus metrics scraping was first tested locally, then prometheus configuration is passed as
 prometheus.yml to prometheus container.
 
-Google cloud json and ssh key used by terraform are scraped from the project.
+Google cloud json and ssh key used by terraform are removed from the project.
 
 Overall I've exceed 2 hours of allocated time.
