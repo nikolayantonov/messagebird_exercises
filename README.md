@@ -24,3 +24,5 @@ Prometheus metrics scraping was first tested locally, then prometheus configurat
 prometheus.yml to prometheus container.
 
 Google cloud json and ssh key used by terraform are scraped from the project.
+
+Overall I've exceed 2 hours of allocated time.
